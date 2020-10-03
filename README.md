@@ -1,3 +1,7 @@
 # Peer-to-Peer-File-Sharing-System
 P2P Upload + Download file sharing system written in Java
-##Tutorial coming soon##
+
+
+To compile and run the code, you must first run either the P2Pclient.java file or the DirectoryServer.java file separately, but before doing that make sure you know the IP address of the computer(s) that you will be running the servers on. You will be required to have a minimum of 6 servers, at least 4 running the DirectoryServer.java files which implements the 4 Directory Server Pools and at least 2 P2Pclient servers with one client that runs the upload and the other that will query the uploaded file and download it.
+
+ Once you have the IP addresses of all required computers running the servers, make sure you record the IP address and port number of the 1st DirectoryServer.java and one for the successor DirectoryServer.java or 2nd DirectoryServer.java. (In our case the IP address for first Directory Server is ENG205-33 and port is 20110, 2nd would be ENG205-34 and its port 20110). Repeat this until you have 4 Directory Servers running at the same time. After this is done, run 2 P2Pclient.java files on 2 separate machines and you will get a input box popup 3 times. Enter any of the Peer Servers ip addresses (any of the 4 Directory Servers IP’s) for first input, port number for FIRST Directory Server, and then enter IP Address for FIRST Directory Server. If everything was set up properly you should be able to connect to the network and receive command line option to download, upload or query files.
